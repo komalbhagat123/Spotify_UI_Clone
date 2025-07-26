@@ -133,25 +133,6 @@ nav .about {
   font-size: 13px;
 }
 
-.sidebar {
-  background-color: #121212;
-  width: 430px;
-  border-radius: 1rem; /* 16px */
-}
-.main-content {
-  background-color: #121212;
-  flex: 1;
-  border-radius: 1rem; /* 16px */
-  overflow: auto;
-}
-
-.music-player {
-  background-color: black;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 80px;
-}
 
 nav .search button:hover {
   background-color: rgba(75, 75, 75, 0.493);
@@ -165,6 +146,148 @@ nav .search button:hover {
 
 .about .left a button:hover {
   color: rgba(255, 255, 255, 0.733);
+}
+
+.sidebar {
+  background-color: #121212;
+  width: 400px;
+  height: 100%;
+  border-radius: 1rem; /* 16px */
+  margin-right: 5px;
+  overflow: auto;
+}
+
+.sidebar .top {
+  height: 60px;
+  display: flex
+}
+
+
+.sidebar .top .btn1{
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .top .btn1 button{
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: 700;
+}
+
+.sidebar .top .btn2{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sidebar .top .btn2 .left button{ 
+  background-color: #6565652d; 
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.sidebar .top .btn2 .right button{
+  background-color: transparent;
+  border: none;
+   color: #656565;
+   font-size: 14px;
+}
+
+.sidebar .mid{
+  height: 45px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sidebar .mid button{
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  background-color: #65656554;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.sidebar .library{
+  background-color: #121212;
+  height: 100%;
+  
+}
+
+.sidebar .library .head{
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.sidebar .library .head button{
+  background-color: transparent;
+  border: none;
+  color: #656565;
+  font-size: 15px;
+  font-weight: 500;
+
+}
+
+.sidebar .library .content {
+  margin: 0 10px;
+  overflow: auto;
+}
+
+.sidebar .library .content button{
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #121212;
+  color: rgba(255, 255, 255, 0.774);
+  align-items: center;
+  font-weight: 500;
+  border: none;
+}
+
+.sidebar .library .content button:hover{
+  background-color: #6565654f;
+}
+
+.sidebar .library .content button .right2{
+  margin-left: 10px;
+}
+
+.sidebar .library .content button p{
+  font-size: 12px;
+  justify-self: flex-start;
+}
+
+.sidebar .library .content button img{
+  height: 50px;
+  border-radius: 6px;
+}
+
+.main-content {
+  background-color: #121212;
+  flex: 1;
+  border-radius: 1rem; /* 16px */
+  overflow: auto;
+}
+
+.music-player {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
 }
 
 @media (max-width: 750px) {
